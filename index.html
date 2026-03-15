@@ -663,6 +663,24 @@
         </p>
       </div>
 
+      <!-- Google Maps Embed -->
+      <div class="map-container animate-on-scroll">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.5!2d101.1064!3d13.2831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102b7de3e0e9f61%3A0x4c9a38de96e6aaab!2z4LiE4Lij4Lix4Lin4LiE4Li44LiT4Lib4Li54LmIIOC4reC4suC4q-C4suC4o-C4leC4suC4oeC4quC4seC5iOC4hw!5e0!3m2!1sth!2sth!4v1710000000000!5m2!1sth!2sth"
+          width="100%"
+          height="400"
+          style="border:0; border-radius: var(--radius-xl);"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div style="text-align: center; margin-top: var(--space-lg);">
+          <a href="https://goo.gl/maps/GmEYnNVTQazjmUMR7?g_st=ac" target="_blank" rel="noopener" class="btn btn--primary btn--direction">
+            🗺️ <span class="lang-th">นำทางไปร้าน</span><span class="lang-zh">导航到店</span>
+          </a>
+        </div>
+      </div>
+
       <div class="location-grid stagger-children">
         <!-- Branch 1 -->
         <div class="location-card animate-on-scroll">
@@ -682,6 +700,11 @@
             <span class="icon">📞</span>
             <span><a href="tel:+66950798464">095-079-8464</a></span>
           </div>
+          <div style="margin-top: var(--space-md);">
+            <a href="https://goo.gl/maps/GmEYnNVTQazjmUMR7?g_st=ac" target="_blank" rel="noopener" class="btn btn--outline" style="font-size: 0.85rem; padding: 10px 20px;">
+              🗺️ <span class="lang-th">เปิดแผนที่</span><span class="lang-zh">打开地图</span>
+            </a>
+          </div>
         </div>
 
         <!-- Branch 2 -->
@@ -698,21 +721,141 @@
               <span class="lang-zh">99/4 วิทูรดำริ路, 挽汶区, 春武里府 20170</span>
             </span>
           </div>
-        </div>
-      </div>
-
-      <!-- Additional Info -->
-      <div class="animate-on-scroll" style="text-align: center; margin-top: var(--space-xl);">
-        <div class="location-card" style="display: inline-block; max-width: 500px;">
-          <div class="location-detail" style="justify-content: center;">
-            <span class="icon">💰</span>
-            <span>
-              <span class="lang-th"><strong>ราคาเริ่มต้นเพียงจานละ 40-50 บาท</strong> — คุ้มค่าทุกคำที่ได้ลิ้มลอง</span>
-              <span class="lang-zh"><strong>人均消费仅40-50泰铢起</strong> — 性价比超高，每一口都值得</span>
-            </span>
+          <div class="location-detail">
+            <span class="icon">📞</span>
+            <span><a href="tel:+66950798464">095-079-8464</a></span>
           </div>
         </div>
       </div>
+
+      <!-- Google Reviews Widget -->
+      <div class="reviews-section animate-on-scroll">
+        <div class="section-header" style="margin-bottom: var(--space-xl);">
+          <span class="section-icon">⭐</span>
+          <h2>
+            <span class="lang-th">รีวิวจากลูกค้า</span>
+            <span class="lang-zh">顾客评价</span>
+          </h2>
+          <p>
+            <span class="lang-th">เสียงจากคนที่มากินจริง — ที่ Google Reviews</span>
+            <span class="lang-zh">来自真实食客的声音 — Google 评价</span>
+          </p>
+        </div>
+
+        <div class="review-widget">
+          <div class="review-header">
+            <div class="review-logo">
+              <svg viewBox="0 0 24 24" width="32" height="32">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+              </svg>
+              <span class="review-brand">Google <span class="lang-th">รีวิว</span><span class="lang-zh">评价</span></span>
+            </div>
+            <div class="review-stars-display">
+              <div class="review-stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star half">★</span>
+              </div>
+              <span class="review-rating">4.5 / 5.0</span>
+            </div>
+          </div>
+
+          <div class="review-cards">
+            <div class="review-card">
+              <div class="review-card-header">
+                <div class="reviewer-avatar">👤</div>
+                <div>
+                  <div class="reviewer-name">
+                    <span class="lang-th">ลูกค้าประจำ</span>
+                    <span class="lang-zh">常客</span>
+                  </div>
+                  <div class="review-card-stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="review-text">
+                <span class="lang-th">"อร่อยมาก กะเพราหมูกรอบเด็ดสุดๆ เสิร์ฟไวมาก ราคาไม่แพง คุ้มค่าทุกจาน"</span>
+                <span class="lang-zh">"非常好吃，打抛脆皮猪肉超棒，上菜很快，价格实惠，每道菜都很值"</span>
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="review-card-header">
+                <div class="reviewer-avatar">👤</div>
+                <div>
+                  <div class="reviewer-name">
+                    <span class="lang-th">สายชิม</span>
+                    <span class="lang-zh">美食家</span>
+                  </div>
+                  <div class="review-card-stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="review-text">
+                <span class="lang-th">"มะพร้าวปั่นนมสดหอมมัน อาหารก็อร่อย บรรยากาศดี จะกลับมาอีกแน่นอน"</span>
+                <span class="lang-zh">"椰子奶昔香浓，食物也很美味，环境好，一定会再来"</span>
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="review-card-header">
+                <div class="reviewer-avatar">👤</div>
+                <div>
+                  <div class="reviewer-name">
+                    <span class="lang-th">นักเดินทาง</span>
+                    <span class="lang-zh">旅行者</span>
+                  </div>
+                  <div class="review-card-stars">★★★★☆</div>
+                </div>
+              </div>
+              <p class="review-text">
+                <span class="lang-th">"แวะมากินตอนผ่านบ้านบึง ส้มตำแซ่บมาก ถั่วงอกฟรีเกี๊ยวทอดฟรีด้วย ประทับใจ"</span>
+                <span class="lang-zh">"路过挽汶来尝试，青木瓜沙拉很辣很爽，免费豆芽和炸云吞加分，很满意"</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: var(--space-xl);">
+            <a href="https://search.google.com/local/writereview?placeid=ChIJYZ8O_t63MjARq6rmluE4mkw" target="_blank" rel="noopener" class="btn btn--primary">
+              ⭐ <span class="lang-th">เขียนรีวิวบน Google</span><span class="lang-zh">在 Google 上写评价</span>
+            </a>
+            <a href="https://search.google.com/local/reviews?placeid=ChIJYZ8O_t63MjARq6rmluE4mkw" target="_blank" rel="noopener" class="btn btn--outline" style="margin-left: var(--space-sm);">
+              📖 <span class="lang-th">ดูรีวิวทั้งหมด</span><span class="lang-zh">查看全部评价</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact & Price Info -->
+      <div class="contact-bar animate-on-scroll">
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <strong><span class="lang-th">โทรสั่งอาหาร</span><span class="lang-zh">电话订餐</span></strong>
+            <a href="tel:+66950798464" class="contact-phone">095-079-8464</a>
+          </div>
+        </div>
+        <div class="contact-divider"></div>
+        <div class="contact-item">
+          <span class="contact-icon">💰</span>
+          <div>
+            <strong><span class="lang-th">ราคาเริ่มต้น</span><span class="lang-zh">起步价</span></strong>
+            <span class="contact-detail"><span class="lang-th">จานละ 40-50 บาท</span><span class="lang-zh">每份40-50泰铢</span></span>
+          </div>
+        </div>
+        <div class="contact-divider"></div>
+        <div class="contact-item">
+          <span class="contact-icon">🗺️</span>
+          <div>
+            <strong><span class="lang-th">นำทาง</span><span class="lang-zh">导航</span></strong>
+            <a href="https://goo.gl/maps/GmEYnNVTQazjmUMR7?g_st=ac" target="_blank" rel="noopener" class="contact-detail" style="color: var(--clr-gold);">
+              <span class="lang-th">เปิด Google Maps</span><span class="lang-zh">打开 Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 

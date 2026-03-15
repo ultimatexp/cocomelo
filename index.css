@@ -785,6 +785,229 @@ a:hover {
   margin-top: 2px;
 }
 
+/* Map Container */
+.map-container {
+  margin-bottom: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.map-container iframe {
+  display: block;
+}
+
+.btn--direction {
+  font-size: 1.1rem;
+  padding: 16px 40px;
+}
+
+/* Google Reviews Widget */
+.reviews-section {
+  margin-top: var(--space-2xl);
+}
+
+.review-widget {
+  background: var(--grad-card);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--clr-border);
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.review-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.review-brand {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--clr-text);
+}
+
+.review-stars-display {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 1.4rem;
+  color: var(--clr-text-subtle);
+}
+
+.star.filled {
+  color: #FBBC05;
+}
+
+.star.half {
+  background: linear-gradient(90deg, #FBBC05 50%, var(--clr-text-subtle) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.review-rating {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--clr-gold);
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  transition: all var(--dur-mid) var(--ease-out);
+}
+
+.review-card:hover {
+  background: rgba(232, 168, 56, 0.04);
+  border-color: rgba(232, 168, 56, 0.15);
+  transform: translateY(-3px);
+}
+
+.review-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.reviewer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(232, 168, 56, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--clr-text);
+}
+
+.review-card-stars {
+  color: #FBBC05;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.review-text {
+  color: var(--clr-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* Contact Bar */
+.contact-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+  background: var(--grad-card);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg) var(--space-xl);
+  margin-top: var(--space-2xl);
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.contact-icon {
+  font-size: 1.6rem;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--clr-text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-phone {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--clr-gold) !important;
+}
+
+.contact-detail {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--clr-text);
+}
+
+.contact-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--clr-border);
+}
+
+/* Responsive for reviews & map */
+@media (max-width: 768px) {
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-bar {
+    flex-direction: column;
+    gap: var(--space-lg);
+    text-align: center;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .contact-divider {
+    width: 60px;
+    height: 1px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .review-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* CTA section */
 .cta-section {
   text-align: center;
