@@ -1531,6 +1531,79 @@ a:hover {
   }
 }
 
+/* ---------- Fixed Mobile CTA Bar ---------- */
+.mobile-cta-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-cta-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(13, 11, 9, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--clr-border);
+    padding: 10px 12px;
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+    gap: 10px;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .mobile-cta-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 14px 16px;
+    border-radius: var(--radius-full);
+    font-family: var(--ff-thai);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all var(--dur-fast) var(--ease-out);
+  }
+
+  .mobile-cta-phone {
+    background: var(--grad-gold);
+    color: var(--clr-bg);
+    box-shadow: 0 2px 12px rgba(232, 168, 56, 0.3);
+  }
+
+  .mobile-cta-phone:hover {
+    color: var(--clr-bg);
+  }
+
+  .mobile-cta-nav {
+    background: rgba(142, 192, 124, 0.15);
+    border: 2px solid var(--clr-coconut);
+    color: var(--clr-coconut);
+  }
+
+  .mobile-cta-nav:hover {
+    color: var(--clr-coconut);
+  }
+
+  .mobile-cta-icon {
+    font-size: 1.1rem;
+  }
+
+  /* Add bottom padding to body so content isn't hidden behind fixed bar */
+  body {
+    padding-bottom: 80px;
+  }
+
+  /* Hide the footer on very bottom to not overlap */
+  .footer {
+    padding-bottom: var(--space-2xl);
+  }
+}
+
 /* ---------- Chinese font override ---------- */
 .lang-zh {
   font-family: var(--ff-chinese);
